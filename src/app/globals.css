@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-text;
+  }
+}
+
+@layer utilities {
+  .layout {
+    @apply px-4 sm:px-8 md:px-10 xl:px-40 w-screen;
+  }
+
+  .heading-text {
+    @apply font-heading text-[32px] leading-tight;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
