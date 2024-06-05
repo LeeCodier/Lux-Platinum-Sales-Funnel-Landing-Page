@@ -21,10 +21,17 @@ const NavBar = () => {
     observer.observe(nav);
   });
 
+  const navClass = navOpen
+    ? " h-fit mt-7  py px-2  w-full text-black flex items-center justify-between"
+    : " h-fit pt-7 pb px-2  w-full text-black flex items-center justify-between";
+
+  const navContainerClass = navOpen
+    ? "rounded-xl bg-white "
+    : "rounded-b-xl bg-white ";
   return (
     <div id="nav" className="layout">
-      <div className="rounded-b-xl bg-white ">
-        <nav className=" h-fit pt-7 pb px-2  w-full text-black flex items-center justify-between">
+      <div className={navContainerClass}>
+        <nav className={navClass}>
           <div className="heading-text ">Lux Platinum</div>
           <div
             onClick={() => setNavOpen(!navOpen)}
