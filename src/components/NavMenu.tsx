@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Facebook,
   Instagram,
@@ -15,7 +16,7 @@ const NavMenu = () => {
   return (
     <div className="flex flex-col text-black  pt-7 pb-2 px-2  w-full  items-left justify-center gap-2.5 ">
       <div className=" text-[24px]  leading-tight flex-col items-center justify-center font-heading gap-2">
-        <div>article</div>
+        <Link href="/article">article</Link>
         <div>testimonials</div>
         <div>services</div>
         <div>about</div>

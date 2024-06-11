@@ -1,0 +1,9 @@
+import { Header } from "./Header";
+import NavBar from "./NavBar";
+import { CTA } from "./CTA";
+import { WhyUs } from "./WhyUs";
+import { HowItWorks } from "./HowItWorks";
+import { Product1 } from "./Product1";
+import { Product2 } from "./Product2";
+
+export { Header, NavBar, CTA, WhyUs, HowItWorks, Product1, Product2 };

@@ -26,8 +26,6 @@ import {
 import necklace_jewelry from "/public/icons/necklace_jewelry.svg";
 export const jewelry = necklace_jewelry;
 import Image from "next/image";
-import { Content } from "next/font/google";
-import { headers } from "next/headers";
 
 //article content
 export const a_header: string[] = [
@@ -107,16 +105,17 @@ export const a_company = {
 
 export const benifits = [
   {
-    icon: <SpeechIcon width={80} height={80} />,
+    icon: <SpeechIcon width={80} height={80} strokeWidth={0.8} />,
     content: "Crystal clear communication",
   },
+
   {
-    icon: <Pickaxe width={80} height={80} />,
-    content: "Industry Standard craftsmanship",
+    icon: <Gem width={80} height={80} strokeWidth={0.8} />,
+    content: "Ethical material Sourcing",
   },
   {
-    icon: <Gem width={80} height={80} />,
-    content: "Ethical Material Sourcing",
+    icon: <Pickaxe width={80} height={80} strokeWidth={0.8} />,
+    content: "Industry standard craftsmanship",
   },
 ];
 
@@ -150,16 +149,16 @@ export const how_it_works = [
   {
     icon: (
       <div className="flex flex-row w-fit gap-x-2.5">
-        <Speech width={80} height={80} />{" "}
+        <Speech width={80} height={80} strokeWidth={0.8} />{" "}
         <div className="scale-x-[-1]">
-          <Speech width={80} height={80} />
+          <Speech width={80} height={80} strokeWidth={0.8} />
         </div>
       </div>
     ),
     content: "Book a call",
   },
   {
-    icon: <Handshake width={80} height={80} />,
+    icon: <Handshake width={80} height={80} strokeWidth={0.8} />,
     content: "Leave it to us",
   },
   {
@@ -197,17 +196,17 @@ export const lp_herotext = {
     "With over 40 years of expertise in the jewellery manufacturing industry rest assured that your orders are in the right hands",
 };
 
-export const lp_services = [
-  {
+export const lp_services = {
+  product1: {
     header: "Gold, Silver and Diamond Specialists",
     content:
       "With over 40 years of expertise in the jewellery manufacturing industry rest assured that your orders are in the right hands",
-    graphic: <div>placeholder</div>,
+    graphic: <div className="h-full w-full">placeholder</div>,
   },
-  {
+  product2: {
     header: "Gemstone sales",
     content:
       "Offering only the finest stones and rare metals on the planet to suite the needs of retailers and their consumers",
-    graphic: <div>placeholder</div>,
+    graphic: <div className="h-full w-full">placeholder</div>,
   },
-];
+};

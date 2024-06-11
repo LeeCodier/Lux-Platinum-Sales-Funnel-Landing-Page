@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { Languages, Menu, Volume2, X } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import NavMenu from "./NavMenu";
@@ -32,7 +32,9 @@ const NavBar = () => {
     <div id="nav" className="layout">
       <div className={navContainerClass}>
         <nav className={navClass}>
-          <div className="heading-text ">Lux Platinum</div>
+          <Link href="/" className="heading-text ">
+            Lux Platinum
+          </Link>
           <div
             onClick={() => setNavOpen(!navOpen)}
             className="navbreakpoint:hidden hover:cursor-pointer"
@@ -46,7 +48,7 @@ const NavBar = () => {
 
           <div className=" items-center justify-center gap-5 hidden navbreakpoint:flex">
             <div className=" text-[24px]  leading-tight flex-center font-heading gap-2 xl:gap-4">
-              <div>article</div>
+              <Link href="/article">article</Link>
               <div>testimonials</div>
               <div>services</div>
               <div>about</div>

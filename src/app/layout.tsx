@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+import { NavBar } from "@/components";
 
-const roboto = Roboto({ weight: ["400"], subsets: ["latin"] });
+const roboto = Roboto({ weight: ["400", "300"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Lux Platinum",
