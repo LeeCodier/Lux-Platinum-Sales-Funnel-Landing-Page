@@ -126,7 +126,6 @@ export const testimonials = [
     header: "“Exceptional Craftsmanship and Unbeatable Service”",
     content:
       "As a jewellery enthusiast and business owner, I’ve had the pleasure of working with many jewellery manufacturers. However, my experience with Luxe Platinum stands out as truly remarkable.",
-
     cname: "Dan Polas",
     cimg: DanPolas,
   },
@@ -143,7 +142,7 @@ export const testimonials = [
     content:
       "Exceptional craftsmanship, personalized service, and a commitment to sustainability define our experience with your jewellery manufacturing company. Each piece is a masterpiece, whispering stories of elegance and love.",
     cname: "Maya Darke",
-    cimg: HannahMerkil,
+    cimg: MayaDarke,
   },
 ];
 
@@ -214,9 +213,9 @@ export const lp_services = {
 };
 
 export const ProductCarousel = [
-  <div className="  w-full h-full">placedholderf 1</div>,
-  <div className="w-full h-full">placeholderf 2</div>,
-  <div className="w-full h-full">placeholder 3</div>,
-  <div className="w-full h-full">placeholder 4</div>,
-  <div className="w-full h-full">placeholder 5</div>,
+  <div className=" hover:cursor-pointer w-full h-full">placedholderf 1</div>,
+  <div className="w-full h-full hover:cursor-pointer">placeholderf 2</div>,
+  <div className="w-full h-full hover:cursor-pointer">placeholder 3</div>,
+  <div className="w-full h-full hover:cursor-pointer">placeholder 4</div>,
+  <div className="w-full h-full hover:cursor-pointer">placeholder 5</div>,
 ];

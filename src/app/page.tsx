@@ -5,6 +5,8 @@ import {
   Product1,
   Product2,
   Index,
+  Testimonials,
+  Parallax,
 } from "@/components";
 import "./globals.css";
 export default function Home() {
@@ -15,6 +17,9 @@ export default function Home() {
       <Product1 />
       <Product2 />
       <Index />
+      <Testimonials />
+      <Parallax />
+      <HowItWorks />
     </main>
   );
 }

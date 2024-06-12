@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import ReactDOM from "react-dom/client";
 import EmblaCarousel from "./EmblaCarousel";
 import { EmblaOptionsType } from "embla-carousel";
 import { ProductCarousel } from "@/constants";
