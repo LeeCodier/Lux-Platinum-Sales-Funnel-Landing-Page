@@ -5,5 +5,6 @@ import { WhyUs } from "./WhyUs";
 import { HowItWorks } from "./HowItWorks";
 import { Product1 } from "./Product1";
 import { Product2 } from "./Product2";
+import { Index } from "./carousel";
 
-export { Header, NavBar, CTA, WhyUs, HowItWorks, Product1, Product2 };
+export { Index, Header, NavBar, CTA, WhyUs, HowItWorks, Product1, Product2 };

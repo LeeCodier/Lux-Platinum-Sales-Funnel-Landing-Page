@@ -22,10 +22,12 @@ import {
   Icon,
   Handshake,
   Speech,
+  Divide,
 } from "lucide-react";
 import necklace_jewelry from "/public/icons/necklace_jewelry.svg";
 export const jewelry = necklace_jewelry;
 import Image from "next/image";
+import { ReactNode } from "react";
 
 //article content
 export const a_header: string[] = [
@@ -62,35 +64,35 @@ export const a_solutions = [
     header: "Ethical Sourcing",
     content:
       "Prioritize responsible sourcing by partnering with suppliers who adhere to ethical practices. Rigorous supplier selection, regular audits, and partnerships with organizations like the Responsible Jewellery Council can ensure responsible material procurement.",
-    component: () => <div> placeholder</div>,
+    Component: () => <div> placeholder</div>,
   },
   {
     id: 2,
     header: "Supply Chain Transparency",
     content:
       " Implement transparent practices to trace metals and gemstones back to their origins. Consumers increasingly demand transparency, so consider tools or technologies that enable supply chain visibility.",
-    component: () => <div> placeholder</div>,
+    Component: () => <div> placeholder</div>,
   },
   {
     id: 3,
     header: "Metal Price Volatility Management",
     content:
       " Monitor metal prices closely and consider hedging strategies or long-term contracts to mitigate price fluctuations.",
-    component: () => <div> placeholder</div>,
+    Component: () => <div> placeholder</div>,
   },
   {
     id: 4,
     header: "Quality Control",
     content:
       "Establish stringent quality control processes throughout the production cycle. Regular inspections, certifications, and collaboration with skilled craftsmen contribute to consistent quality.",
-    component: () => <div> placeholder</div>,
+    Component: () => <div> placeholder</div>,
   },
   {
     id: 5,
     header: "Lead Time Management",
     content:
       " Efficiently manage lead times by optimizing production schedules, streamlining logistics, and maintaining strong relationships with suppliers.",
-    component: <div> placeholder</div>,
+    Component: () => <div> placeholder</div>,
   },
 ];
 
@@ -210,3 +212,11 @@ export const lp_services = {
     graphic: <div className="h-full w-full">placeholder</div>,
   },
 };
+
+export const ProductCarousel = [
+  <div className="  w-full h-full">placedholderf 1</div>,
+  <div className="w-full h-full">placeholderf 2</div>,
+  <div className="w-full h-full">placeholder 3</div>,
+  <div className="w-full h-full">placeholder 4</div>,
+  <div className="w-full h-full">placeholder 5</div>,
+];
