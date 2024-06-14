@@ -11,9 +11,15 @@ import { Parallax } from "./Parallax";
 import { Services } from "./Services";
 import { Form } from "./Form";
 import { Footer } from "./Footer";
+import { AHeader } from "./AHeader";
+import { AIssues } from "./AIssues";
+import { ACompany } from "./ACompany";
 
 export {
+  ACompany,
+  AIssues,
   Footer,
+  AHeader,
   Form,
   Services,
   Parallax,
