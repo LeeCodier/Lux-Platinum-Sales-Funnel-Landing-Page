@@ -8,7 +8,7 @@ const roboto = Roboto({ weight: ["400", "300"], subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Lux Platinum",
   icons: {
-    icon: " /fav.ico",
+    icon: " /Favicon.ico",
   },
 };
 
