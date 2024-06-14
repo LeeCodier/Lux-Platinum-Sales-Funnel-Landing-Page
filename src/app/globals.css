@@ -12,7 +12,7 @@
 
 @layer utilities {
   .column {
-    @apply mt-6 sm:mt-8 flex flex-col gap-y-6 sm:gap-y-8 md:gap-y-10 md:mt-10  xl:gap-y-14 xl:mt-14;
+    @apply my-6  sm:my-8 flex flex-col gap-y-6 sm:gap-y-8 md:gap-y-10 md:my-10  xl:gap-y-14 xl:my-14;
   }
 
   .layout {

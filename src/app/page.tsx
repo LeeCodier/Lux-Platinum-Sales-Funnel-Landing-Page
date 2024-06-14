@@ -7,11 +7,14 @@ import {
   Index,
   Testimonials,
   Parallax,
+  Services,
+  Form,
 } from "@/components";
 import "./globals.css";
+
 export default function Home() {
   return (
-    <main className="column">
+    <main className="column ">
       <Header />
       <WhyUs />
       <Product1 />
@@ -20,6 +23,8 @@ export default function Home() {
       <Testimonials />
       <Parallax />
       <HowItWorks />
+      <Services />
+      <Form />
     </main>
   );
 }

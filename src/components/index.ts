@@ -8,8 +8,14 @@ import { Product2 } from "./Product2";
 import { Index } from "./carousel/Index";
 import { Testimonials } from "./Testimonials";
 import { Parallax } from "./Parallax";
+import { Services } from "./Services";
+import { Form } from "./Form";
+import { Footer } from "./Footer";
 
 export {
+  Footer,
+  Form,
+  Services,
   Parallax,
   Testimonials,
   Index,
