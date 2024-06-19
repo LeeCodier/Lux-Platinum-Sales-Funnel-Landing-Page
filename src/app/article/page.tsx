@@ -6,6 +6,7 @@ export const metadata: Metadata = {
 };
 
 import {
+  ANav,
   ACompany,
   AHeader,
   AIssues,
@@ -23,9 +24,10 @@ const page = () => {
   return (
     <div className="column">
       <AHeader />
+      <ANav />
       <div className="body layout">{a_bridges[0]}</div>
 
-      <div className=" layout">
+      <div id="issue1" className=" layout">
         <div className=" flex p-2 rounded-xl border border-secondary gap-2 sm:gap-3 sm:p-4">
           <div className="w-full flex flex-col gap-2 ">
             <div className="heading-text">{a_issues[0].header}</div>
@@ -41,7 +43,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className=" layout">
+      <div id="issue2" className=" layout">
         <div className=" flex flex-row-reverse p-2 rounded-xl border border-secondary gap-2 sm:gap-3 sm:p-4">
           <div className="w-full flex flex-col gap-2 ">
             <div className="heading-text">{a_issues[1].header}</div>

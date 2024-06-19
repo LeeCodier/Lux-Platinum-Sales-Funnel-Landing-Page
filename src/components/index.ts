@@ -15,8 +15,10 @@ import { AHeader } from "./AHeader";
 import { AIssues } from "./AIssues";
 import { ACompany } from "./ACompany";
 import { BackToTop } from "./BackToTop";
+import { ANav } from "./ANav";
 
 export {
+  ANav,
   BackToTop,
   ACompany,
   AIssues,
