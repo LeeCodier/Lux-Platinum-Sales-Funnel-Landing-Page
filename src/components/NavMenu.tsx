@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ScrollToHook } from "@/hooks/ScrollToHook";
 import {
   Facebook,
   Instagram,
@@ -17,10 +18,38 @@ const NavMenu = () => {
     <div className="flex flex-col text-black  pt-7 pb-2 px-2  w-full  items-left justify-center gap-2.5 ">
       <div className=" text-[24px]  leading-tight flex-col items-center justify-center font-heading gap-2">
         <Link href="/article">article</Link>
-        <div>testimonials</div>
-        <div>services</div>
-        <div>about</div>
-        <div>contact</div>
+        <div
+          className="hover:cursor-pointer"
+          onClick={() => {
+            ScrollToHook("#Testimonials");
+          }}
+        >
+          testimonials
+        </div>
+        <div
+          className="hover:cursor-pointer"
+          onClick={() => {
+            ScrollToHook("#Services");
+          }}
+        >
+          services
+        </div>
+        <div
+          className="hover:cursor-pointer"
+          onClick={() => {
+            ScrollToHook("#About");
+          }}
+        >
+          about
+        </div>
+        <div
+          className="hover:cursor-pointer"
+          onClick={() => {
+            ScrollToHook("#Form");
+          }}
+        >
+          contact
+        </div>
       </div>
       <div className="flex items-center justify-between">
         <div className="flex-center gap-2.5">

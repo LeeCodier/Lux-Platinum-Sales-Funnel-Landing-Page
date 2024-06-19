@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 
 export const Testimonials = () => {
   return (
-    <div className="layout">
+    <div id="Testimonials" className="layout">
       <div className=" w-full flex  flex-wrap gap-y-6 justify-between">
         {testimonials.map((t, index) => {
           return (

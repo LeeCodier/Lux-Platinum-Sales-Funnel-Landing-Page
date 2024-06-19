@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Why sourcing a Jewellery manufacturer is so difficult? , And why it doesn’t have to be",
+};
+
 import {
   ACompany,
   AHeader,

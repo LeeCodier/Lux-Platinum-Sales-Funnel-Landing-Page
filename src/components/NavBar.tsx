@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Languages, Menu, Volume2, X } from "lucide-react";
 import React, { useState, useEffect } from "react";
 import NavMenu from "./NavMenu";
+import { ScrollToHook } from "@/hooks/ScrollToHook";
 
 const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -49,10 +50,38 @@ const NavBar = () => {
           <div className=" items-center justify-center gap-5 hidden navbreakpoint:flex">
             <div className=" text-[24px]  leading-tight flex-center font-heading gap-2 xl:gap-4">
               <Link href="/article">article</Link>
-              <div>testimonials</div>
-              <div>services</div>
-              <div>about</div>
-              <div>contact</div>
+              <div
+                className="hover:cursor-pointer"
+                onClick={() => {
+                  ScrollToHook("#Testimonials");
+                }}
+              >
+                testimonials
+              </div>
+              <div
+                className="hover:cursor-pointer"
+                onClick={() => {
+                  ScrollToHook("#Services");
+                }}
+              >
+                services
+              </div>
+              <div
+                className="hover:cursor-pointer"
+                onClick={() => {
+                  ScrollToHook("#About");
+                }}
+              >
+                about
+              </div>
+              <div
+                className="hover:cursor-pointer"
+                onClick={() => {
+                  ScrollToHook("#Form");
+                }}
+              >
+                contact
+              </div>
             </div>
             <div className="flex-center gap-2 ">
               <Languages

@@ -9,6 +9,7 @@ import {
   Parallax,
   Services,
   Form,
+  ACompany,
 } from "@/components";
 import "./globals.css";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Index />
       <Testimonials />
       <Parallax />
+      <ACompany />
       <HowItWorks />
       <Services />
       <Form />

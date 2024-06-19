@@ -14,8 +14,10 @@ import { Footer } from "./Footer";
 import { AHeader } from "./AHeader";
 import { AIssues } from "./AIssues";
 import { ACompany } from "./ACompany";
+import { BackToTop } from "./BackToTop";
 
 export {
+  BackToTop,
   ACompany,
   AIssues,
   Footer,

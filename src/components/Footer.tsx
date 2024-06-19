@@ -34,7 +34,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="w-fit">
-        <div className="font-heading font-medium text-[30px]">Address</div>
+        <div className="font-heading font-medium text-[30px]">Contact</div>
         <div className="body flex flex-col gap-2  text-[30px]">
           <div className="flex gap-x-2.5">
             <MapPin width={32} height={32} /> 692 Polsdev Street

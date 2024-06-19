@@ -1,6 +1,9 @@
 export const Form = () => {
   return (
-    <div className="layout flex items-center flex-col gap-y-6 sm:gap-y-8 md:gap-y-10   xl:gap-y-14 ">
+    <div
+      id="Form"
+      className="layout flex items-center flex-col gap-y-6 sm:gap-y-8 md:gap-y-10   xl:gap-y-14 "
+    >
       <div className="heading-text text-center">Why wait?</div>
       <form className="  items-start flex flex-col gap-y-8 lg:gap-y-10 ">
         <div className="  max-w-[864px] grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-4 ">
