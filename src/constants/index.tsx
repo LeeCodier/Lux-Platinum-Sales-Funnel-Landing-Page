@@ -14,6 +14,7 @@ export const T3_img = MayaDarke;
 export const issue_img = pollution;
 export const issue2_img = designer;
 
+import { LTM, MPV } from "@/components/Charts.jsx";
 //icons
 import {
   SpeechIcon,
@@ -64,7 +65,7 @@ export const a_solutions = [
     content:
       "Prioritize responsible sourcing by partnering with suppliers who adhere to ethical practices. Rigorous supplier selection, regular audits, and partnerships with organizations like the Responsible Jewellery Council can ensure responsible material procurement.",
     Component: () => (
-      <div className="hidden sm:block w-full h-full"> placeholder</div>
+      <div className="hidden md:block w-full h-full"> placeholder</div>
     ),
   },
   {
@@ -73,7 +74,7 @@ export const a_solutions = [
     content:
       " Implement transparent practices to trace metals and gemstones back to their origins. Consumers increasingly demand transparency, so consider tools or technologies that enable supply chain visibility.",
     Component: () => (
-      <div className="hidden sm:block w-full h-full"> placeholder</div>
+      <div className="hidden md:block w-full h-full"> placeholder</div>
     ),
   },
   {
@@ -82,7 +83,12 @@ export const a_solutions = [
     content:
       " Monitor metal prices closely and consider hedging strategies or long-term contracts to mitigate price fluctuations.",
     Component: () => (
-      <div className="hidden sm:block w-full h-full"> placeholder</div>
+      <div className="hidden md:flex items-center  flex-col justify-center w-full h-full gap-6">
+        <div className="text-[20px] leading-tight sm:leading-[130%] font-normal">
+          Average Price of major rare metals(USD/kg)
+        </div>
+        <MPV />
+      </div>
     ),
   },
   {
@@ -91,7 +97,7 @@ export const a_solutions = [
     content:
       "Establish stringent quality control processes throughout the production cycle. Regular inspections, certifications, and collaboration with skilled craftsmen contribute to consistent quality.",
     Component: () => (
-      <div className="hidden sm:block w-full h-full"> placeholder</div>
+      <div className="hidden md:block w-full h-full"> placeholder</div>
     ),
   },
   {
@@ -100,7 +106,13 @@ export const a_solutions = [
     content:
       " Efficiently manage lead times by optimizing production schedules, streamlining logistics, and maintaining strong relationships with suppliers.",
     Component: () => (
-      <div className="hidden sm:block w-full h-full"> placeholder</div>
+      <div className="hidden md:flex items-center  flex-col justify-center w-full h-full gap-y-6">
+        <LTM />
+        <div className="text-[20px] leading-tight sm:leading-[130%] font-normal">
+          Ideal factory lead times <br />
+          notice the consistency
+        </div>
+      </div>
     ),
   },
 ];
