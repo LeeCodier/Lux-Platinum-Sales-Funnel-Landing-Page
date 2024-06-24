@@ -3,7 +3,7 @@ import { a_solutions } from "@/constants";
 export const AIssues = () => {
   return (
     <div id="Aissues" className="layout">
-      <div className=" p-2 sm:p-4  flex flex-col gap-2 sm:gap-6 rounded-xl border border-secondary  bg-primary ">
+      <div className=" p-2 sm:p-4  flex flex-col gap-2 sm:gap-6 md:gap-8 rounded-xl border border-secondary  bg-primary ">
         {a_solutions.map(({ id, Component, header, content }) => (
           <div id={id} key={id} className="">
             <div className="flex gap-2 h-max items-center ">

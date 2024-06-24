@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@react-three/drei": "^9.107.0",
+    "@react-three/fiber": "^8.16.8",
     "d3": "^7.9.0",
     "embla-carousel-react": "^8.1.4",
     "gsap": "^3.12.5",
@@ -17,13 +19,15 @@
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "react-hot-toast": "^2.4.1"
+    "react-hot-toast": "^2.4.1",
+    "three": "^0.165.0"
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.165.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",

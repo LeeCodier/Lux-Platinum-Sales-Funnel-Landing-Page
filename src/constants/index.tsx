@@ -6,6 +6,9 @@ import MayaDarke from "/public/images/MayaDarke.png";
 //article content images
 import pollution from "/public/images/pollution.png";
 import designer from "/public/images/designer.png";
+import quality_control from "/public/images/quality_control.jpg";
+import supply_chain2 from "/public/images/supply_chain2.avif";
+import ethical_sourcing from "/public/images/ethical_sourcing.avif";
 
 export const T1_img = DanPolas;
 export const T2_img = HannahMerkil;
@@ -65,7 +68,14 @@ export const a_solutions = [
     content:
       "Prioritize responsible sourcing by partnering with suppliers who adhere to ethical practices. Rigorous supplier selection, regular audits, and partnerships with organizations like the Responsible Jewellery Council can ensure responsible material procurement.",
     Component: () => (
-      <div className="hidden md:block w-full h-full"> placeholder</div>
+      <div className="  pl-10 hidden md:block w-full h-full">
+        {" "}
+        <Image
+          src={ethical_sourcing}
+          alt="people working in a factory"
+          className=" object-cover w-full  max-h-[337px] lg:max-h-[275px]"
+        />
+      </div>
     ),
   },
   {
@@ -74,7 +84,14 @@ export const a_solutions = [
     content:
       " Implement transparent practices to trace metals and gemstones back to their origins. Consumers increasingly demand transparency, so consider tools or technologies that enable supply chain visibility.",
     Component: () => (
-      <div className="hidden md:block w-full h-full"> placeholder</div>
+      <div className="  pl-10 hidden md:block w-full h-full">
+        {" "}
+        <Image
+          src={supply_chain2}
+          alt="people working in a factory"
+          className=" object-cover w-full  max-h-[337px] lg:max-h-[275px]"
+        />
+      </div>
     ),
   },
   {
@@ -83,7 +100,7 @@ export const a_solutions = [
     content:
       " Monitor metal prices closely and consider hedging strategies or long-term contracts to mitigate price fluctuations.",
     Component: () => (
-      <div className="hidden md:flex items-center  flex-col justify-center w-full h-full gap-6">
+      <div className="hidden mb-5 md:flex items-center  flex-col justify-center w-full h-full gap-6">
         <div className="text-[20px] leading-tight sm:leading-[130%] font-normal">
           Average Price of major rare metals(USD/kg)
         </div>
@@ -97,7 +114,14 @@ export const a_solutions = [
     content:
       "Establish stringent quality control processes throughout the production cycle. Regular inspections, certifications, and collaboration with skilled craftsmen contribute to consistent quality.",
     Component: () => (
-      <div className="hidden md:block w-full h-full"> placeholder</div>
+      <div className="  pl-11 hidden md:block w-full h-full">
+        {" "}
+        <Image
+          src={quality_control}
+          alt="people working in a factory"
+          className=" object-cover w-full  max-h-[324px] lg:max-h-[204px]"
+        />
+      </div>
     ),
   },
   {
@@ -106,12 +130,12 @@ export const a_solutions = [
     content:
       " Efficiently manage lead times by optimizing production schedules, streamlining logistics, and maintaining strong relationships with suppliers.",
     Component: () => (
-      <div className="hidden md:flex items-center  flex-col justify-center w-full h-full gap-y-6">
-        <LTM />
+      <div className=" mb-5 hidden md:flex items-center  flex-col justify-center w-full h-full gap-y-1">
         <div className="text-[20px] leading-tight sm:leading-[130%] font-normal">
           Ideal factory lead times <br />
           notice the consistency
         </div>
+        <LTM />
       </div>
     ),
   },
@@ -223,13 +247,11 @@ export const lp_services = {
     header: "Gold, Silver and Diamond Specialists",
     content:
       "With over 40 years of expertise in the jewellery manufacturing industry rest assured that your orders are in the right hands",
-    graphic: <div className="h-full w-full">placeholder</div>,
   },
   product2: {
     header: "Gemstone sales",
     content:
       "Offering only the finest stones and rare metals on the planet to suite the needs of retailers and their consumers",
-    graphic: <div className="h-full w-full">placeholder</div>,
   },
 };
 

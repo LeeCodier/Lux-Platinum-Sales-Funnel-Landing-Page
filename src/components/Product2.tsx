@@ -9,9 +9,7 @@ export const Product2 = () => {
           <div className="body">{lp_services.product2.content}</div>
           <CTA />
         </div>
-        <div className="md:w-1/2 flex h-1/2 md:h-full flex-col flex-center">
-          {lp_services.product2.graphic}
-        </div>
+        <div className="md:w-1/2 flex h-1/2 md:h-full flex-col flex-center"></div>
       </div>
     </div>
   );

@@ -8,6 +8,10 @@ import { ScrollToHook } from "@/hooks/ScrollToHook";
 const NavBar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
+  const cs = () => {
+    return setNavOpen(!navOpen);
+  };
+
   useEffect(() => {
     const nav = document.getElementById("nav") as HTMLDivElement;
 
@@ -20,7 +24,7 @@ const NavBar = () => {
       });
     });
     observer.observe(nav);
-  });
+  }, [navOpen]);
 
   const navClass = navOpen
     ? " h-fit mt-7  py px-2  w-full text-black flex items-center justify-between"
@@ -37,7 +41,7 @@ const NavBar = () => {
             Lux Platinum
           </Link>
           <div
-            onClick={() => setNavOpen(!navOpen)}
+            onClick={cs}
             className="navbreakpoint:hidden hover:cursor-pointer"
           >
             {navOpen ? (
